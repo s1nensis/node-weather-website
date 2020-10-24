@@ -14,7 +14,7 @@ const getWeather = (location = '') => {
         messageOne.textContent = data.error;
       } else {
         messageOne.textContent = data.location;
-        messageTwo.textContent = `${data.forecast.description[0]}, Temperature: ${data.forecast.temperature} °C`;
+        messageTwo.textContent = `${data.forecast}`;
 
         console.log(data.location);
         console.log(data.forecast);
